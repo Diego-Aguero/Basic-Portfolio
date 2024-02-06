@@ -144,13 +144,13 @@ img {
 #home {
 	margin-bottom: 3em;
 	border-radius: 1em;
-	background-color: rgba(112, 55, 205, 0.5);
+	background-color: rgba(94, 0, 217, 0.5);
 	backdrop-filter: blur(0.3em);
 	z-index: 0;
 	height: 30em;
 	margin: 0 2em 3em 2em;
 }
-/* ------------------------------------------------------------------------------ */
+
 header {
    margin: 2em;
    top: 1em;
@@ -181,7 +181,6 @@ header nav a:hover {
    transition: .5seg ease;
 }
 
-/* ------------------------------------------------------------------------------ */
 h1 {
 	font-size: 2em;
 	padding: 0.3em;
@@ -243,6 +242,7 @@ main {
 	border: .2em solid #6e3d99;
 	object-fit: cover; 
 }
+
 .contact {
 	display: flex;
 	justify-content: center; /* Añade esta línea */
@@ -448,13 +448,12 @@ footer .contact-footer {
 	backdrop-filter: blur(0.3em)
 }
 
-
 /* break points */
 
 /* small mobiles */
 @media screen and (min-width: 0px) and (max-width: 320px) {
 	header nav{
-		width: 100%;
+		width: 70%;
 	}
 
 	header nav a {
@@ -463,7 +462,7 @@ footer .contact-footer {
 	}
 
 	#home {
-		height: 70vh;
+		height: 23em;
 		margin-bottom: 3.6em;
 	}
 
@@ -484,15 +483,25 @@ footer .contact-footer {
 	}
 
 	p {
-		font-size: 0.7em;
+		font-size: 0.6em;
+	}
+
+	.contact {
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   justify-content: space-around;
 	}
 
 	.contact a {
-		font-size: 0.7em;
+	   font-size: 0.9em;
+	   flex: 1 0 48%; 
+	   margin: 1%; 
+	   flex-basis: 100%;
 	}
 
 	#projects {
-		height: 40vh;
+		height: 13em;
 	}
 
 	.container ul {
@@ -523,12 +532,11 @@ footer .contact-footer {
 		padding: 0.4em;
 		margin: 0.3em 1.5em 0.3em;
 	}
-
 }
 
 /* normal mobiles */
 @media screen and (min-width: 321px) and (max-width: 480px) {
-	header nav{
+	header nav {
 		width: 70%
 	}
 
@@ -538,8 +546,8 @@ footer .contact-footer {
 	}
 
 	#home {
-		height: 68vh;
-		margin-bottom: 4.4em;
+		height: 23em;
+		margin-bottom: 4em;
 	}
 
 	h1 {
@@ -554,20 +562,34 @@ footer .contact-footer {
 		font-size: 0.9em;
 	}
 
+	.highlight {
+		pointer-events: none;
+	}
+
 	p {
 		font-size: 0.7em;
 	}
 
+	.contact {
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   justify-content: space-around;
+	}
+
 	.contact a {
-		font-size: .9em;
+	   font-size: 1.3em;
+	   flex: 1 0 48%; 
+	   margin: 1%; 
+	   flex-basis: 100%;
 	}
 
 	#projects {
-		height: 45vh;
+		height: 18em;
 	}
 
 	.container ul {
-		width: 19.2em;
+		width: 20em;
 		height: 0;
 		padding: 0 1em 0;
 	}
@@ -577,28 +599,31 @@ footer .contact-footer {
 	}
 
 	.subcontainer {
-		margin-top: 0;
+		margin-top: 2em;
 	}
 
 	.container .project_card {
-		height: 9em;
+		height: 13em;
 		width: 7.4em;
-		margin: 0 0.3em 0;
+		margin: 0 .3em 0;
 	}
 
 	#about_me {
-		margin: 0 1em 0;
+		margin: 2em 1em 2em;
 	}
 
 	.contact-footer a {
-		padding: 0.4em;
-		margin: 0.3em 1.5em 0.3em;
+		padding: 0.6em;
+		margin: 0.3em 1.5em 1em;
 	}
-
 }
 
 /* big mobiles */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+	header {
+		margin-top: 0em;
+	}
+
 	header nav {
 		width: 30%;
 	}
@@ -609,20 +634,20 @@ footer .contact-footer {
 	}
 
 	#home {
-		height: 70vh;
+		height: 24em;
 		margin-bottom: 3.6em;
 	}
 
 	h1 {
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 
 	h2 {
-		font-size: 0.8em;
+		font-size: 1.5em;
 	}
 
 	h3 {
-		font-size: 0.9em;
+		font-size: 1.3em;
 	}
 
 	.highlight {
@@ -630,15 +655,15 @@ footer .contact-footer {
 	}
 
 	p {
-		font-size: 0.7em;
+		font-size: 1	em;
 	}
 
 	.contact a {
-		font-size: 0.9em;
+	   font-size: 1em;
 	}
 
 	#projects {
-		height: 40vh;
+		height: 15em;
 	}
 
 	.container ul {
@@ -648,7 +673,7 @@ footer .contact-footer {
 	}
 
 	li {
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 
 	.subcontainer {
@@ -656,17 +681,17 @@ footer .contact-footer {
 	}
 
 	.container .project_card {
-		height: 9em;
+		height: 15em;
 		width: 28%;
-		margin: 0 0.3em 0;
+		margin: 1em .3em 0;
 	}
 
 	#about_me {
-		margin: 0 1em 0;
+		margin: 5em 4em 2em;
 	}
 
 	.contact-footer a {
-		padding: 0.4em;
+		padding: 1em;
 		margin: 0.3em 1.5em 0.3em;
 	}
 }
@@ -674,29 +699,36 @@ footer .contact-footer {
 /* tablets */
 @media screen and (min-width: 769px) and (max-width: 960px) {
 header nav {
-		width: 30%;
+		width: 40%;
+	}
+
+	header {
+		margin-top: 0em;
 	}
 
 	header nav a {
-		font-size: 0.7em;
+		font-size: 1.3em;
 		padding: 0 0.3em 0;
 	}
 
 	#home {
-		height: 70vh;
+		height: 26em;
 		margin-bottom: 3.6em;
 	}
 
 	h1 {
-		font-size: 1.5em;
+		font-size: 3em;
+		margin-bottom: .5em;
 	}
 
 	h2 {
-		font-size: 0.8em;
+		font-size: 2em;
+		margin-bottom: .5em;
 	}
 
 	h3 {
-		font-size: 0.9em;
+		font-size: 1.5em;
+		margin-bottom: .5em;
 	}
 
 	.highlight {
@@ -704,15 +736,17 @@ header nav {
 	}
 
 	p {
-		font-size: 0.7em;
+		font-size: 1.2em;
+		margin-bottom: .7em;
 	}
 
 	.contact a {
-		font-size: 0.9em;
+		font-size: 1.3em;
+		margin-bottom: .5em;
 	}
 
 	#projects {
-		height: 40vh;
+		height: 24em;
 	}
 
 	.container ul {
@@ -722,7 +756,7 @@ header nav {
 	}
 
 	li {
-		font-size: 0.8em;
+		font-size: 1.2em;
 	}
 
 	.subcontainer {
@@ -730,29 +764,141 @@ header nav {
 	}
 
 	.container .project_card {
-		height: 9em;
+		height: 16em;
 		width: 28%;
-		margin: 0 0.3em 0;
+		margin: 1em 0.3em 1em;
 	}
 
 	#about_me {
-		margin: 0 1em 0;
+		margin: 0 4em 0;
 	}
 
 	.contact-footer a {
-		padding: 0.4em;
-		margin: 0.3em 1.5em 0.3em;
+		padding: 1em;
+		margin: 0.3em 2em 0.3em;
+	}
+
+	.contact-footer a svg{
+		height: 2em;
+		width: 2em;
 	}
 }
 
 /* monitors */
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 961px) and (max-width: 1024px) {
    h1 {
    	font-size: 2.9em;
    }
 
    #home {
-   	height: 79vh;
+   	height: 27em;
+   	margin: 0 10em 4em 10em;
+   }
+
+   #home main {
+   	display: flex;
+   	flex-direction: row;
+   	padding-top: 6em;
+   }
+
+	.contact a {
+		margin: auto;
+		width: 25%;
+		float: left;
+		margin: 0 0.2em 0;
+	}	
+
+	.contact {
+		padding: 0 .3em 0 .3em;
+	}
+
+	.contact a div {
+		font-size: .8em;
+	}
+
+	nav a {
+		padding: 0em .33em .0em .33em;
+	}
+
+	main {
+		padding-top: 10em;
+	}
+
+	main .presentation {
+		height: 100%;
+		width: 50%;
+	}
+
+	.profile_picture {
+		width: 50%;
+		height: 100%;
+		justify-content: center;
+	}
+
+	.p_picture {
+		border-radius: 50%; 
+		height: 10em; 
+		width: 10em; 
+		margin: auto;
+		object-fit: cover; 
+	}
+
+	.experience_text {
+		font-size: 1.5em;
+		width: 50%;
+		margin-top:2em;
+		text-align: center;
+	}
+
+	/* Projects */
+	#projects {
+		height: 20em;
+		padding: 0 10em 0;
+	}
+
+	.ul .li {
+	margin: 0 2em 0;
+	}
+
+	.container .block {
+		padding: 0;
+		margin: 0; 
+	}
+
+	#projects .container {
+		margin-top: 0.5em;
+	}
+
+	.container { 
+		padding: 0;
+		margin-top: 1em;
+	} 
+
+	/* About me */
+	#about_me {
+		margin-top: 1em;
+		height: 27vh;
+		padding: 0 10em 0;
+	}
+
+	footer {
+		padding: 0 10em 0;
+		margin-top: 0.5em;
+	}
+
+	.contact-footer a {
+	   padding: 0.8em;
+	   margin: 0 3em .7em 3em;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1328px) {
+      h1 {
+   	font-size: 2.9em;
+   }
+
+   #home {
+   	height: 27em;
    	margin: 0 10em 4em 10em;
    }
 
@@ -838,13 +984,12 @@ header nav {
 	/* About me */
 	#about_me {
 		margin-top: 1em;
-		height: 27vh;
-		padding: 0 10em 0;
+		height: 25vh;
+		padding: 0 11em 0;
 	}
 
 	footer {
 		padding: 0 10em 0;
-		margin-top: 0.5em;
 	}
 
 	.contact-footer a {
