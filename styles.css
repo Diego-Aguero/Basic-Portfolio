@@ -412,6 +412,57 @@ h3 {
 	margin-bottom: 0.2em;
 }
 
+#work_with_me {
+	background-color: rgba(112, 50, 217, 0.5);
+	backdrop-filter: blur(0.3em);
+	height: 20em;
+	margin: 1em 0 1.5em;
+	border-radius: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex-direction: column; 
+}
+
+#work_with_me h3 {
+	margin-bottom: .5em;
+}
+
+input {
+	border-radius: .2em;
+	background-color: rgba(240, 240, 240, .7);
+	backdrop-filter: blur(0.3em);
+	color: #181818;
+	padding: .1em;
+}
+
+textarea {
+	resize: none;
+	background-color: rgba(240, 240, 240, .7);
+	backdrop-filter: blur(0.3em);
+	color: #181818;
+	border-radius: .2em;
+	padding: .1em;
+	width: 11.3em;
+  	height: 5em;
+}
+
+input[type="submit"] {
+	margin-top: -.8em;
+	padding: .2em;
+	background-color: rgba(240, 240, 240, .7);
+	backdrop-filter: blur(0.3em);
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: rgba(101, 31, 113, 0.5);
+	backdrop-filter: blur(0.3em);
+	color: #F0F0F0;
+	transition: .3s ease;
+}
+
 footer .contact-footer {
    display: flex;
    justify-content: center;
@@ -528,6 +579,15 @@ footer .contact-footer {
 		margin: 0 1em 0;
 	}
 
+	.work_with_me {
+		display: none;
+	}
+
+
+	#work_with_me {
+   	 display: none;
+  }
+
 	.contact-footer a {
 		padding: 0.4em;
 		margin: 0.3em 1.5em 0.3em;
@@ -550,12 +610,16 @@ footer .contact-footer {
 		margin-bottom: 4em;
 	}
 
+	 .main_text {
+		font-size: .9em;
+	}
+
 	h1 {
 		font-size: 1.5em;
 	}
 
 	h2 {
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 
 	h3 {
@@ -611,6 +675,14 @@ footer .contact-footer {
 	#about_me {
 		margin: 2em 1em 2em;
 	}
+
+	.work_with_me {
+		display: none;
+	}
+
+	#work_with_me {
+   	 display: none;
+  }
 
 	.contact-footer a {
 		padding: 0.6em;
@@ -688,6 +760,11 @@ footer .contact-footer {
 
 	#about_me {
 		margin: 5em 4em 2em;
+	}
+
+	#work_with_me {
+		height: 20em;
+		margin: 1em 2em 1.5em;
 	}
 
 	.contact-footer a {
@@ -782,6 +859,12 @@ header nav {
 		height: 2em;
 		width: 2em;
 	}
+
+	#work_with_me {
+		height: 20em;
+		margin: 1em 2em 1.5em;
+	}
+
 }
 
 /* monitors */
@@ -800,6 +883,10 @@ header nav {
    	flex-direction: row;
    	padding-top: 6em;
    }
+
+   .main_text {
+		font-size: .8em;
+	}
 
 	.contact a {
 		margin: auto;
@@ -853,7 +940,7 @@ header nav {
 	/* Projects */
 	#projects {
 		height: 20em;
-		padding: 0 10em 0;
+		margin: 0 10em 0;
 	}
 
 	.ul .li {
@@ -876,9 +963,12 @@ header nav {
 
 	/* About me */
 	#about_me {
-		margin-top: 1em;
-		height: 27vh;
-		padding: 0 10em 0;
+		height: 17em;
+		margin: 1em 10em 0;
+	}
+
+	#work_with_me {
+		margin: 1em 10em 1.5em;
 	}
 
 	footer {
@@ -892,14 +982,14 @@ header nav {
 	}
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1328px) {
+@media screen and (min-width: 1025px) {
       h1 {
-   	font-size: 2.9em;
+   	font-size: 2.8em;
    }
 
    #home {
    	height: 27em;
-   	margin: 0 10em 4em 10em;
+   	margin: 0 15em 4em 15em;
    }
 
    #home main {
@@ -921,6 +1011,10 @@ header nav {
 
 	.contact a div {
 		font-size: .8em;
+	}
+
+	.main_text {
+		font-size: .7em;
 	}
 
 	nav a {
@@ -953,18 +1047,22 @@ header nav {
 	.experience_text {
 		font-size: 1.5em;
 		width: 50%;
-		margin-top:2em;
+		margin: 2em 0 0 0;
 		text-align: center;
 	}
 
 	/* Projects */
 	#projects {
-		height: 52vh;
-		padding: 0 10em 0;
+		height: 20em;
+		margin: 0 15em 0;
 	}
 
 	.ul .li {
-	margin: 0 2em 0;
+		margin: 0 2em 0;
+	}
+
+	button {
+		cursor: pointer;
 	}
 
 	.container .block {
@@ -983,9 +1081,12 @@ header nav {
 
 	/* About me */
 	#about_me {
-		margin-top: 1em;
-		height: 25vh;
-		padding: 0 11em 0;
+		height: 15em;
+		margin: 3em 14em 2em;
+	}
+
+	#about_me p {
+		font-size: .9em;
 	}
 
 	footer {
@@ -995,6 +1096,10 @@ header nav {
 	.contact-footer a {
 	   padding: 0.8em;
 	   margin: 0 3em .7em 3em;
+	}
+
+	#work_with_me {
+		margin: 1em 15em 1.5em;
 	}
 }
 
