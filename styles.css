@@ -141,7 +141,7 @@ img {
 }
 
 /* Home */
-#home {
+main {
 	margin-bottom: 3em;
 	border-radius: 1em;
 	background-color: rgba(94, 0, 217, 0.5);
@@ -197,17 +197,17 @@ h2 {
 }
 
 .highlight:hover {
-	color: rgb(80, 255, 255); 
+	color: rgb(192, 192, 192);  
 	transition: .5s ease;
 }
 
 .highlight:hover .extra {
-	color: rgb(80, 255, 255); 
+	color: rgb(192, 192, 192); 
 	opacity: 100%;
 	transition: 0.5s ease;
 }
 
-main h2 {
+#home h2 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -222,7 +222,7 @@ main h2 {
 	transition: 0.5s ease;
 }
 
-main {
+#home {
 	display: flex;
 	flex-direction: column-reverse;
 }
@@ -514,7 +514,7 @@ footer .contact-footer {
 		padding: 0 0.3em 0;
 	}
 
-	#home {
+	main {
 		height: 23em;
 		margin-bottom: 3.6em;
 	}
@@ -608,12 +608,12 @@ footer .contact-footer {
 		padding: 0 0.3em 0;
 	}
 
-	#home {
+	main {
 		height: 23em;
 		margin-bottom: 4em;
 	}
 
-	 .main_text {
+	 .#main_text {
 		font-size: .9em;
 	}
 
@@ -708,7 +708,7 @@ footer .contact-footer {
 		padding: 0 0.3em 0;
 	}
 
-	#home {
+	main {
 		height: 24em;
 		margin-bottom: 3.6em;
 	}
@@ -791,7 +791,7 @@ header nav {
 		padding: 0 0.3em 0;
 	}
 
-	#home {
+	main {
 		height: 26em;
 		margin-bottom: 3.6em;
 	}
@@ -876,18 +876,18 @@ header nav {
    	font-size: 2.9em;
    }
 
-   #home {
+   main {
    	height: 27em;
    	margin: 0 10em 4em 10em;
    }
 
-   #home main {
+   main #home {
    	display: flex;
    	flex-direction: row;
    	padding-top: 6em;
    }
 
-   .main_text {
+   .#main_text {
 		font-size: .8em;
 	}
 
@@ -910,11 +910,11 @@ header nav {
 		padding: 0em .33em .0em .33em;
 	}
 
-	main {
+	#home {
 		padding-top: 10em;
 	}
 
-	main .presentation {
+	#home .presentation {
 		height: 100%;
 		width: 50%;
 	}
@@ -990,12 +990,12 @@ header nav {
    	font-size: 2.9em;
    }
 
-   #home {
+   main {
    	height: 27em;
    	margin: 0 12em 4em 12em;
    }
 
-   #home main {
+   main #home {
    	display: flex;
    	flex-direction: row;
    	padding-top: 6em;
@@ -1016,7 +1016,7 @@ header nav {
 		font-size: .8em;
 	}
 
-	.main_text {
+	.#main_text {
 		font-size: .7em;
 	}
 
@@ -1024,11 +1024,11 @@ header nav {
 		padding: 0em .33em .0em .33em;
 	}
 
-	main {
+	#home {
 		padding-top: 10em;
 	}
 
-	main .presentation {
+	#home .presentation {
 		height: 100%;
 		width: 50%;
 	}
@@ -1109,12 +1109,6 @@ header nav {
 		margin: 1em 12em 1.5em;
 	}
 }
-
-
-
-
-
-
 
 
 
