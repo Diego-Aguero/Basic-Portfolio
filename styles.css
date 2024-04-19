@@ -378,7 +378,7 @@ svg {
 	top: 0;
 	opacity: 0;
 	transition: all .5s ease;
-	transform: translateY(50%);
+	transform: translateY(110%);
 	height: 100%;
 }
 
@@ -402,9 +402,16 @@ svg {
 	border-radius: 1em;
 }
 
+#iptv {
+	cursor: pointer;
+
+}
+
 .project_card img{
 	max-width: 100%;
   	height: auto;
+  	posi
+  	margin-top: 20em;
 }
 
 /* About me */
@@ -1077,6 +1084,14 @@ header nav {
 		margin-top: 0.5em;
 	}
 
+	.container .project_card {
+		height: 17em;
+		width: 21%;
+		margin: 1em;
+		border: 0.1em white solid;
+		border-radius: 1em;
+	}
+
 	.container { 
 		padding: 0;
 		margin-top: 1em;
@@ -1109,6 +1124,3 @@ header nav {
 		margin: 1em 12em 1.5em;
 	}
 }
-
-
-
