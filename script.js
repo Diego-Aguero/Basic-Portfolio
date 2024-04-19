@@ -16,3 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const myImage = document.getElementById('iptv');
+    
+    myImage.addEventListener('click', function() {
+         window.open('https://leon-iptv.netlify.app/', '_blank');
+    });
+});
