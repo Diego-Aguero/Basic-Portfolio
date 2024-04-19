@@ -999,7 +999,7 @@ header nav {
 
    main {
    	height: 27em;
-   	margin: 0 12em 4em 12em;
+   	margin: 0 20em 4em 20em;
    }
 
    main #home {
@@ -1100,7 +1100,7 @@ header nav {
 	/* About me */
 	#about_me {
 		height: 17em;
-		margin: 3em 14em 1em;
+		margin: 3em 20em 1em;
 	}
 
 	#about_me h3 {
@@ -1121,6 +1121,6 @@ header nav {
 	}
 
 	#work_with_me {
-		margin: 1em 12em 1.5em;
+		margin: 1em 20em 1.5em;
 	}
 }
